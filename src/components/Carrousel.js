@@ -1,17 +1,14 @@
 import React, { Component } from "react";
 import {
-  MDBContainer,
   MDBView,
   MDBMask,
-  MDBCollapse,
   MDBCarousel,
   MDBCarouselCaption,
   MDBCarouselInner,
   MDBCarouselItem,
-  MDBFooter
 } from "mdbreact";
 
-class Carrousel extends React.Component {
+class Carrousel extends Component {
   constructor(props) {
     super(props);
     this.state = {
