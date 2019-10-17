@@ -1,5 +1,5 @@
 import React from "react";
-
+import { MDBContainer, MDBRow, MDBCol } from "mdbreact";
 import { Footer, TopNavigation, Carrousel, Features } from "../../components";
 
 class Home extends React.Component {
@@ -19,9 +19,24 @@ class Home extends React.Component {
   render() {
     return (
       <div>
-        <TopNavigation />
-        <Carrousel />
-        <Features />
+        <header>
+          <TopNavigation />
+          <Carrousel />
+        </header>
+        <main>
+          <MDBContainer>
+            <Features />
+            <MDBRow>
+              <MDBCol md="12" className="mt-4" />
+            </MDBRow>
+            <MDBRow>
+              <MDBCol md="6" className="mt-4" />
+            </MDBRow>
+            <MDBRow>
+              <MDBCol md="12" className="mt-4" />
+            </MDBRow>
+          </MDBContainer>
+        </main>
         <Footer>
           <p className="footer-copyright mb-0 py-3 text-center">
             &copy; {new Date().getFullYear()} Copyright:
